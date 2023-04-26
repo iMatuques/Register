@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3AA2ED;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #5ebcff;
+    text-decoration: underline;
+}
+
+input,
+button {
+    all: unset;
+    box-sizing: border-box;
+}
+
+#page {
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+#page>* {
+    width: 50%;
+}
+
+#page>div {
+    padding: 4rem 11.2rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header img {
+    height: 5.4rem;
+    width: 16rem;
+}
+
+main {
+    margin-top: 11.4rem;
+    max-width: 38.4rem;
+}
+
+h1 {
+    font-size: 3.6rem;
+    line-height: 5.5rem;
+    color: #1e293b;
+}
+
+h1+p {
+    color: #475569;
+    margin-top: 1.6rem;
+}
+
+form {
+    margin-top: 4rem;
+}
+
+form input {
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.1px solid #e2e8f0;
+    border-radius: 0.4rem;
+    padding: 1.6rem 1.2rem;
+    margin-top: 0.8rem;
+    color: #1e293b;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:focus,
+input:hover {
+    border: 0.1rem solid #5ebcff;
+    ;
+}
+
+form .input-wrapper+.input-wrapper {
+    margin-top: 1.6rem;
+    outline: 0;
+}
+
+.label-wrapper {
+    justify-content: space-between;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #1e293b;
+}
+
+label+a {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+label+a:hover {
+    color: #5ebcff;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+.headline {
+    max-width: 35rem;
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    background: #0093fc;
+    width: 100%;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: .4rem;
+}
+
+form button:focus {
+    outline: 0.2px solid black;
+    border-radius: 0.2rem;
+}
+
+form button:hover {
+    background: #3AA2ED;
+    cursor: pointer;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.eye {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    cursor: pointer;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.help {
+    color: #475569;
+}
+
+@media (max-width: 900px) {
+
+    #page > * {
+        width: 100%;
+    }
+
+    #page > img {
+        display: none;
+    }
+
+    #page > div {
+        padding: 11rem;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #page > div {
+        padding: 4rem;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/register.js"></script>
+    <link rel="shortcut icon" href="../IMG/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title>Login - Vertigo</title>
+</head>
+
+<body>
+
+    <div id="page" class="flex">
+        <div>
+            <header>
+                <img src="../IMG/logo.svg" alt="">
+            </header>
+
+            <main>
+                <div class="headline">
+                    <h1>Acesse a plataforma</h1>
+                    <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+                </div>
+
+                <form>
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" required placeholder="Digite seu e-mail">
+
+                        <div class="input-wrapper">
+                            <div class="label-wrapper flex">
+                                <label for="">Senha</label>
+                                <a href="#">Esqueceu a senha?</a>
+                            </div>
+
+                            <input type="password" id="senha" required maxlength="8" minlength="6" placeholder="Digite sua senha">
+
+                            <img onclick="togglePassword()" class="eye" src="../IMG/show.svg" alt="">
+                            <img onclick="togglePassword()" class="eye hide" src="../IMG/hide.svg" alt="">
+                        </div>
+
+                        <button type="submit">Entrar</button>
+
+                        <div class="help">
+                            Ainda não tem conta?
+                            <a href="#">Inscreva-se</a>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <img src="../IMG/bg.jpg" alt="">
+    </div>
+</body>
+
+</html>
